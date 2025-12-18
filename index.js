@@ -5,23 +5,39 @@
 // git commit -m "Init"
 // git push
 
-// const files = ["cat.jpg", "dog.png", "document.pdf"];
+ const files = ["cat.jpg", "dog.png", "doc.docx", "Virus.exe", "document.pdf"];
+ for (const file of files) {
+    if (file === "cat.jpg") {
+        console.log("Пропускаем данную картинку");
+        continue;
+    }
 
-// files.push("music.mp3");
+    if (file === "Virus.exe") {
+        console.log("АЛАРМ! Вирус найден!");
+        break;
+    }
 
-// let fuel = 100; // топливо
+    console.log("Файл проверен: " + file);
+ }
+
+//  files.push("music.mp3");
+
+// for (const file of files) {
+//     console.log(file);
+// }
+
+//  let fuel = 100; // топливо
 
 //  while (fuel > 0) {
-//     console.log("Едем " + "Топливо осталось: " + fuel);
+//      console.log("Едем " + "Топливо осталось: " + fuel);
 //     fuel -= 10; // fuel = fuel - 10;
-//  }
+//   }
 
-// console.log("Приехали");
+//  console.log("Приехали");
 
 // for (СТАРТ; ФИНИШ; ШАГ);
 
-for (let i = 1; i <= 5; i = i++) {
-    console.log("Отжимание номер " + i);
-}
+// for (let i = 0; i < files.length; i++) {
+//     console.log(files[i]);
+// }
 
-// git push 
