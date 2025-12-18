@@ -23,3 +23,5 @@
 for (let i = 1; i <= 5; i = i++) {
     console.log("Отжимание номер " + i);
 }
+
+// git push 
